@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		
+		</style>
+	</head>
+	<body>
+		<div id="d1"></div>
+		<script>
+			function date()
+			{
+				
+				dt=new Date();
+				var h=dt.getHours();
+				var m=dt.getMinutes();
+				var s=dt.getSeconds();
+				if(h<10)
+				{
+					h=0+h.toString();
+				}
+				document.getElementById("d1").innerHTML="现在时间是："+h+"时："+m+"分："+s+"秒";
+			}
+			setInterval("date()",1000);
+		</script>
+	</body>
+</html>
